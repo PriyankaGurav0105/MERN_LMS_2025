@@ -1,9 +1,10 @@
-/* eslint-disable react-refresh/only-export-components */
 /* eslint-disable no-unused-vars */
+/* eslint-disable react-refresh/only-export-components */
 /* eslint-disable react/prop-types */
-import { Skeleton } from "@/components/ui/skeleton";
-import { initialSignInFormData, initialSignUpFormData } from "@/config";
-import { checkAuthService, loginService, registerService } from "@/services";
+
+import { Skeleton } from "../../components/ui/skeleton.jsx";
+import { initialSignInFormData, initialSignUpFormData } from "../../config/index.js";
+import { checkAuthService, loginService, registerService } from "../../services/index.js";
 import { createContext, useEffect, useState } from "react";
 
 export const AuthContext = createContext(null);
