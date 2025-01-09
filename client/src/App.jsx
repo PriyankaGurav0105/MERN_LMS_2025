@@ -1,18 +1,18 @@
 import { Route, Routes } from "react-router-dom";
-import AuthPage from "./pages/auth";
-import RouteGuard from "./components/route-guard";
+import AuthPage from "./pages/auth/index.jsx";
+import RouteGuard from "./components/route-guard/index.jsx";
 import { useContext } from "react";
-import { AuthContext } from "./context/auth-context";
-import InstructorDashboardpage from "./pages/instructor";
-import StudentViewCommonLayout from "./components/student-view/common-layout";
-import StudentHomePage from "./pages/student/home";
-import NotFoundPage from "./pages/not-found";
-import AddNewCoursePage from "./pages/instructor/add-new-course";
-import StudentViewCoursesPage from "./pages/student/courses";
-import StudentViewCourseDetailsPage from "./pages/student/course-details";
-import PaypalPaymentReturnPage from "./pages/student/payment-return";
-import StudentCoursesPage from "./pages/student/student-courses";
-import StudentViewCourseProgressPage from "./pages/student/course-progress";
+import { AuthContext } from "./context/auth-context/index.jsx";
+import InstructorDashboardpage from "./pages/instructor/index.jsx";
+import StudentViewCommonLayout from "./components/student-view/common-layout.jsx";
+import StudentHomePage from "./pages/student/home/index.jsx";
+import NotFoundPage from "./pages/not-found/index.jsx";
+import AddNewCoursePage from "./pages/instructor/add-new-course.jsx";
+import StudentViewCoursesPage from "./pages/student/courses/index.jsx";
+import StudentViewCourseDetailsPage from "./pages/student/course-details/index.jsx";
+import PaypalPaymentReturnPage from "./pages/student/payment-return/index.jsx";
+import StudentCoursesPage from "./pages/student/student-courses/index.jsx";
+import StudentViewCourseProgressPage from "./pages/student/course-progress/index.jsx";
 
 function App() {
   const { auth } = useContext(AuthContext);
